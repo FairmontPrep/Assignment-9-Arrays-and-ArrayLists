@@ -32,7 +32,9 @@ public class Scrambler {
      *      Precondition: wordArr.length is even
      */
     public Scrambler(String[] wordArr) {
-        scrambledWords = mixedWords(wordArr);
+        if (wordArr != null) {
+            scrambledWords = mixedWords(wordArr);
+        }
     }
 
     public String[] getScrambles() {
